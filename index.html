@@ -16,15 +16,13 @@
             embedded
             gesture-detector
         >
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+            <a-nft
+                type="nft"
+                url="assets/asset.fset"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5"
             >
                 <a-image
                     src="assets/asset.png"
